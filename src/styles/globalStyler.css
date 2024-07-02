@@ -1,0 +1,23 @@
+@import url("./reset.css");
+
+:root {
+    /* BRAND COLORS */
+    --brand-1: #4c6ef5;
+    --brand-2: #364fc7;
+
+    /* GRAY COLORS */
+    --gray-1: #191c1f;
+    --gray-2: #212529;
+    --gray-3: #343A40;
+    --gray-4: #ADB5BD;
+    --gray-5: #CED4DA;
+    --gray-6: #EDF2FF;
+    --gray-7: #F8F9FA;
+
+    /* FONTES */
+    --font-primary: "Inter", sans-serif;
+    
+
+    
+}
+

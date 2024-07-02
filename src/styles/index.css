@@ -1,0 +1,415 @@
+@import url("./globalStyler.css");
+
+.title1 {
+    font-weight: 600;
+    font-size: clamp(1.775rem, 0.893rem + 2.619vw, 2.95rem);
+    Line-height: 140%;
+}
+
+.title2 {
+    font-weight: 600;
+    font-size: clamp(1rem, -0.071rem + 2.857vw, 2.5rem);
+    Line-height: 160%;
+}
+
+.title3 {
+    font-weight: 600;
+    font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+    Line-height: 160%;
+}
+
+.text1 {
+    font-weight: 400;
+    font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+    line-height: 150%;
+    color: var(--gray-4);
+
+}
+
+.text2 {
+    font-weight: 400;
+    font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+    line-height: 150%;
+    color: var(--gray-4);
+
+}
+
+.text3 {
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
+    line-height: 150%;
+    color: var(--gray-4);
+
+}
+
+.text4 {
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
+    line-height: 150%;
+    color: var(--gray-4);
+
+}
+
+html {
+    width: 100%;
+    color: var(--gray-6);
+}
+
+body {
+    width: 100%;
+    background-color: var(--gray-2);
+    font-family: var(--font-primary);
+
+
+}
+
+header {
+    width: 100%;
+    background-color: var(--gray-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    gap: 10rem;
+    padding: 1rem;
+    border-bottom: solid var(--brand-1);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header__container {
+    display: flex;
+
+}
+
+/* .header__title {} */
+
+.header__button {
+    background-color: var(--gray-1);
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--gray-7);
+    border: 1px solid var(--gray-7);
+    gap: 10px;
+    border-radius: 0;
+}
+
+.header__button:hover {
+    background-color: var(--gray-2);
+    color: white;
+    border: none;
+}
+
+.header__button:active {
+    background-color: rgb(8, 8, 8);
+
+}
+
+/* #newClassButton {} */
+
+#modalContainer {
+
+    color: var(--gray-7);
+    background-color: var(--gray-2);
+    border: 2px solid var(--brand-1);
+
+
+    padding: 1rem;
+    gap: 31px;
+
+    position: fixed;
+    top: 10rem;
+    right: 0;
+
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.modal__tittle {
+    display: flex;
+    margin-right: 21rem;
+}
+
+.modal__description {
+    color: var(--gray-4);
+}
+
+#modalInput {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-2);
+    font-size: 1.5rem;
+    border: none;
+}
+
+.modalButton {
+    border: none;
+    color: var(--gray-7);
+    background-color: var(--brand-1);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+
+#closeModal {
+    background-color: var(--gray-2);
+    position: absolute;
+    top: 14%;
+    right: 10%;
+
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    align-items: center;
+    gap: 56px;
+}
+
+.main__presentation {
+
+    display: flex;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    background: var(--gray-2, #212529);
+}
+
+.presentation__title {
+    color: var(--gray-6, #EDF2FF);
+    text-align: center;
+}
+
+.presentation__titleSpan {
+    color: var(--brand-1);
+}
+
+.presentation__description {
+    text-align: center;
+    width: 70%;
+}
+.button__aboutus{
+    border: none;
+    color: var(--gray-7);
+    background-color: var(--brand-1);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+
+.main__whoAreWhe {
+    background-color: var(--gray-1);
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    align-items: center;
+    gap: 56px;
+    
+
+}
+
+.whoAreWhe__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+
+}
+
+.whoAreWhe__description {
+    padding-left: 15rem;
+    display: flex;
+    text-align: justify;
+
+}
+
+.doubts__container {
+    display: flex;
+    flex-direction: row;
+    padding: 7rem;
+    align-items: flex-start;
+    gap: 7rem;
+}
+
+.doubts__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 40%;
+
+    position: sticky;
+    top: 100px;
+    z-index: -1;
+
+}
+
+/* .doubts__title {} */
+
+.doubts__descripition {
+    align-self: stretch;
+
+}
+
+.doubts__enterClassButton {
+    background-color: var(--brand-1);
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--gray-7);
+    border: none;
+    gap: 10px;
+    border-radius: 0;
+}
+
+.doubts__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.doubts__question {
+    text-align: center;
+}
+
+.doubts__answer {
+    text-align: justify;
+
+}
+
+.studentsComents__container {
+    display: flex;
+    flex-direction: row;
+    padding: 7rem;
+    align-items: flex-start;
+    gap: 56px;
+}
+
+.studentsComents__section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.studentsComents__card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.student__name {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+    margin-bottom: 0;
+}
+
+.student__nameAndSince {
+    display: flex;
+    flex-direction: column;
+}
+
+.student__description {
+    height: auto;
+    flex-shrink: 1;
+}
+
+.studentsComents__main {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: flex-start;
+    background: var(--brand-1, #4C6EF5);
+    width: 40%;
+
+    position: sticky;
+    top: 100px;
+    left: 5500px;
+    z-index: -1;
+}
+
+.studentsComents__title {
+    display: flex;
+}
+
+.studentsComents__description {
+    display: flex;
+}
+
+
+footer {
+    display: flex;
+    background-color: var(--gray-1);
+    justify-content: center;
+}
+
+.footer__title {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+@media(min-width: 1025px) {
+    body{
+        width: auto;
+        height: auto;
+    }
+   
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main__presentation{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .main__whoAreWhe{
+        padding: 3rem;
+    }
+    .doubts__container{
+        padding: 3rem;
+
+    }
+    .studentsComents__card{
+        text-align: justify;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .main__presentation{
+        padding-bottom: 5rem ;
+
+    }
+    .main__whoAreWhe{
+    }
+}
+@media(max-width: 425px) {
+    .main__whoAreWhe{
+
+    }
+}
+
